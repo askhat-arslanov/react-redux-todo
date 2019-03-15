@@ -1,0 +1,12 @@
+body {
+  display: grid;
+  justify-items: center;
+  background-color: brown;
+  background-image: url(http://www.transparenttextures.com/patterns/worn-dots.png);
+}
+.app {
+  display: grid;
+  justify-items: center;
+  grid-template-columns: minmax(200px, 600px);
+  grid-row-gap: 5px;
+}

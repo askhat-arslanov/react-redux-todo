@@ -1,0 +1,18 @@
+.todo-list {
+  display: grid;
+  grid-template-columns: minmax(200px, 600px);
+  grid-column-gap: 0px;
+  grid-row-gap: 2px;
+}
+.todo-list .empty-list {
+  display: grid;
+  height: 36px;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+  background-color: rgb(219, 219, 219);
+  font-family: inherit;
+}
+.todo-list .empty-list-label {
+  align-self: center;
+  justify-self: center;
+}

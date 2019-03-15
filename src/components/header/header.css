@@ -1,0 +1,74 @@
+header {
+  display: grid;
+  background-color: rgb(252, 200, 32);
+  grid-template-columns: minmax(170px, 570px) 30px;
+  grid-auto-rows: minmax(90px, auto);
+  box-shadow: 2px 2px;
+  border: 2px solid black;
+}
+header h1 {
+  align-self: center;
+  justify-self: center;
+  margin: 0;
+  color: rgb(255, 255, 255);
+  font-family: 'Bangers', cursive;
+  font-size: 4rem;
+  letter-spacing: 1rem;
+  text-shadow: 6px 3px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000,
+    -2px 2px 0 #000, 2px 2px 0 #000;
+  transition: 0.5s;
+  transition-delay: 0.15s;
+  transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+header:hover h1 {
+  transform: translateX(-35px);
+}
+.btn-auth-block {
+  display: grid;
+  align-content: center;
+  grid-row-gap: 5px;
+}
+header .btn {
+  position: relative;
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  grid-template-columns: 60px 30px;
+  font-family: inherit;
+  background-color: rgb(0, 170, 170);
+  color: black;
+  cursor: pointer;
+  height: 30px;
+  width: 30px;
+  box-shadow: 2px 2px;
+  transition-timing-function: ease-out;
+}
+header .btn-sign-up {
+  background-color: crimson;
+}
+header .btn i {
+  position: absolute;
+  align-self: center;
+  justify-self: center;
+}
+header .icon-title {
+  display: grid;
+  justify-content: center;
+  align-content: center;
+  color: black;
+  box-shadow: 2px 2px;
+  cursor: pointer;
+  background-color: rgb(0, 170, 170);
+  height: 30px;
+  width: 60px;
+  opacity: 0;
+  transform: scale(0);
+  transition: 0.3s;
+}
+header .btn-sign-up .icon-title {
+  background-color: crimson;
+}
+header:hover .icon-title {
+  transform: translateX(-30px) scale(1);
+  opacity: 1;
+}

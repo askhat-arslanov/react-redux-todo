@@ -1,0 +1,17 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Nunito', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+input {
+  font-size: 1rem;
+  padding-left: 10px;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+  outline: none;
+  background-color: rgb(219, 219, 219);
+  font-family: inherit;
+}

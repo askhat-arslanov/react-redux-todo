@@ -1,0 +1,141 @@
+.todo-item {
+  position: relative;
+  height: 34px;
+  border: 2px solid black;
+  box-shadow: 2px 2px;
+  background-color: rgb(219, 219, 219);
+  font-family: inherit;
+}
+.todo-item .done {
+  text-decoration: line-through;
+  color: rgb(31, 26, 26);
+}
+.todo-item .important {
+  font-weight: 900;
+  background-color: crimson;
+  padding: 0 3px;
+}
+.todo-label {
+  position: absolute;
+  top: 50%;
+  left: 2%;
+  transform: translate(0, -50%);
+}
+.todo-item .btn {
+  color: black;
+  position: relative;
+  cursor: pointer;
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+  opacity: 0;
+  transform: translate(520px, 1px);
+  transition-timing-function: ease-out;
+  box-shadow: 2px 2px;
+}
+.todo-item .btn i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.btn-delete {
+  background-color: crimson;
+  transition: 0.1s;
+}
+.btn-edit {
+  background-color: rgb(0, 170, 170);
+  transition: 0.2s;
+}
+.btn-important {
+  background-color: #dbcf2a;
+  transition: 0.3s;
+}
+.todo-item:hover {
+  color: black;
+  background-color: white;
+}
+.todo-item:hover .btn {
+  opacity: 1;
+}
+.todo-item:hover .btn-delete {
+  transform: translate(500px, 1px);
+}
+.todo-item:hover .btn-edit {
+  transform: translate(490px, 1px);
+}
+.todo-item:hover .btn-important {
+  transform: translate(480px, 1px);
+}
+.todo-item:hover .btn-delete:active {
+  box-shadow: 0 0;
+  transform: translate(500px, 2px);
+}
+.todo-item:hover .btn-edit:active {
+  box-shadow: 0 0;
+  transform: translate(491px, 2px);
+}
+.todo-item:hover .btn-important:active {
+  box-shadow: 0 0;
+  transform: translate(481px, 2px);
+}
+
+.example-enter {
+  opacity: 0.01;
+}
+
+.example-enter.example-enter-active {
+  opacity: 1;
+  transition: opacity 5000ms ease-in;
+}
+
+.example-exit {
+  opacity: 1;
+}
+
+.example-exit.example-exit-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
+}
+.fade-appear {
+  opacity: 0.01;
+}
+
+.fade-appear.fade-appear-active {
+  opacity: 1;
+  transition: opacity 500ms ease-in;
+}
+.fade-exit {
+  opacity: 1;
+}
+
+.fade-exit.fade-exit-active {
+  opacity: 0.01;
+  transition: opacity 3000ms ease-in;
+}
+
+.message-appear {
+  opacity: 0;
+}
+.message-appear.message-appear-active {
+  opacity: 1;
+  transition: opacity 300ms ease-in;
+}
+.message-enter {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+}
+.message-enter-active {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+  transition: all 300ms ease-out;
+}
+.message-exit {
+  opacity: 1;
+  transform: scale(1) translateY(0%);
+}
+.message-exit-active {
+  opacity: 0.01;
+  transform: scale(0.9) translateY(50%);
+  transition: all 300ms ease-out;
+}
